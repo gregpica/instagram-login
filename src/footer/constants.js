@@ -5,7 +5,7 @@
  * unique.
  */
 
-export const FOOTER_LINKS = [
+export const FOOTER_LINKS_TOP = [
   {
     copy: 'Meta',
     url: 'https://about.facebook.com/meta'
@@ -54,6 +54,9 @@ export const FOOTER_LINKS = [
     copy: 'Instagram Lite',
     url: 'https://about.facebook.com/meta'
   },
+];
+
+export const FOOTER_LINKS_BOTTOM = [
   {
     copy: 'Beauty',
     url: 'https://about.facebook.com/meta'
@@ -83,3 +86,21 @@ export const FOOTER_LINKS = [
     url: 'https://about.facebook.com/meta'
   },
 ];
+
+export const FOOTER_COPYRIGHT = '© 2022 Instagram from Meta';
+
+export const FOOTER_LANGUAGE_OPTIONS = [
+  {
+    id: 'english',
+    copy: 'English'
+  },
+  {
+    id: 'englishUk',
+    copy: 'English (UK)'
+  },
+  {
+    id: 'spanish',
+    copy: 'Espanol'
+  }
+];
+
