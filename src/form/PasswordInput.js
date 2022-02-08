@@ -14,7 +14,13 @@ const PasswordInput = ({
   const togglePasswordHiding = () => setIsHidingPassword(!isHidingPassword);
 
   const inputType = isHidingPassword ? 'password' : 'text';
-  const buttonCopy = isHidingPassword ? 'Show' : 'Hide';
+  const getButtonCopy = () => {
+    if (value) {
+      return isHidingPassword ? 'Show' : 'Hide';
+    }
+
+    return '';
+  }
 
   return (
     <div className={className}>
@@ -25,7 +31,7 @@ const PasswordInput = ({
         value={value}
         onChange={onChange}
       />
-      <div onClick={togglePasswordHiding}>{buttonCopy}</div>
+      <div onClick={togglePasswordHiding}>{getButtonCopy()}</div>
     </div>
   );
 }
