@@ -5,7 +5,8 @@ import TextInput from '../form/TextInput';
 import PasswordInput from '../form/PasswordInput';
 import SubmitInput from '../form/SubmitInput';
 import InstagramTextLogo from '../assets/InstagramTextLogo';
-import LoginFormDivider from './LogInFormDivider';
+import LogInFormDivider from './LogInFormDivider';
+import LogInWithFacebook from './LogInWithFacebook';
 
 import * as styles from './LogIn.style';
 
@@ -29,7 +30,7 @@ const LogInForm = () => {
 
   return (
     <div>
-      <InstagramTextLogo className={styles.logo} />
+      <InstagramTextLogo className={styles.instagramLogo} />
       <form className={styles.form} onSubmit={handleSubmit}>
         <TextInput 
           className={styles.formTextInput}
@@ -48,7 +49,8 @@ const LogInForm = () => {
           '-submit-allowed': isSubmitAllowed
         })} value="Log In" />
       </form>
-      <LoginFormDivider />
+      <LogInFormDivider />
+      <LogInWithFacebook />
     </div>
   );
 }

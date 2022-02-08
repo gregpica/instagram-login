@@ -81,11 +81,18 @@ export const formSubmitInput = css`
   }
 `;
 
-export const logo = css`
+export const instagramLogo = css`
   img {
     width: 175px;
   }
 `;
+
+export const facebookLogo = css`
+  img {
+    width: 15px;
+    padding-top: 1px;
+  }
+`
 
 export const divider = css`
   display: flex;
@@ -95,7 +102,7 @@ export const divider = css`
   font-size: 14px;
   font-weight: bold;
   margin-top: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 `;
 
 export const dividerLine = css`
@@ -104,3 +111,22 @@ export const dividerLine = css`
   background: #8e8e8e;
   margin: 0 10px;
 `;
+
+export const facebookLogin = css`
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 268px;
+  cursor: pointer;
+  background: white;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #375185;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  span {
+    margin-left: 8px;
+  }
+`
