@@ -86,3 +86,21 @@ export const logo = css`
     width: 175px;
   }
 `;
+
+export const divider = css`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8e8e;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 30px;
+`;
+
+export const dividerLine = css`
+  height: 1px;
+  width: 112px;
+  background: #8e8e8e;
+  margin: 0 10px;
+`;

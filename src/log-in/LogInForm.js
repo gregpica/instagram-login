@@ -5,6 +5,7 @@ import TextInput from '../form/TextInput';
 import PasswordInput from '../form/PasswordInput';
 import SubmitInput from '../form/SubmitInput';
 import InstagramTextLogo from '../assets/InstagramTextLogo';
+import LoginFormDivider from './LogInFormDivider';
 
 import * as styles from './LogIn.style';
 
@@ -47,6 +48,7 @@ const LogInForm = () => {
           '-submit-allowed': isSubmitAllowed
         })} value="Log In" />
       </form>
+      <LoginFormDivider />
     </div>
   );
 }
