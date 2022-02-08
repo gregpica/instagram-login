@@ -124,9 +124,15 @@ export const facebookLogin = css`
   font-weight: bold;
   color: #375185;
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   span {
     margin-left: 8px;
   }
-`
+`;
+
+export const forgotPasswordCta = css`
+  color: #375185;
+  text-decoration: none;
+  font-size: 12px;
+`;

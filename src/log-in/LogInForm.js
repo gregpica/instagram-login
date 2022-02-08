@@ -51,6 +51,9 @@ const LogInForm = () => {
       </form>
       <LogInFormDivider />
       <LogInWithFacebook />
+      <a className={styles.forgotPasswordCta} href='/accounts/password/reset'>
+        Forgot password?
+      </a>
     </div>
   );
 }
