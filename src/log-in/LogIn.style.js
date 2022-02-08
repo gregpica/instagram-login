@@ -143,3 +143,24 @@ export const forgotPasswordCta = css`
   text-decoration: none;
   font-size: 12px;
 `;
+
+export const signUpBlock = css`
+  width: 350px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin: 0 auto;
+
+  a {
+    color: #0095f6;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  ${tabletAndUp(css`
+    border: 1px solid #dbdbdb;
+    margin-top: 10px;
+  `)};
+`;
