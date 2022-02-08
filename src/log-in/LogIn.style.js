@@ -1,9 +1,14 @@
 import { css } from '@emotion/css';
+import { tabletAndUp } from '../styles/mediaQueries';
 
 export const container = css`
   width: 350px;
   height: 382px;
-  border: 1px solid #dbdbdb;
+  margin: 0 auto;
+
+  ${tabletAndUp(css`
+    border: 1px solid #dbdbdb;
+  `)};
 `;
 
 export const form = css`
@@ -82,6 +87,8 @@ export const formSubmitInput = css`
 `;
 
 export const instagramLogo = css`
+  margin-top: 10px;
+
   img {
     width: 175px;
   }
@@ -102,7 +109,7 @@ export const divider = css`
   font-size: 14px;
   font-weight: bold;
   margin-top: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 `;
 
 export const dividerLine = css`
