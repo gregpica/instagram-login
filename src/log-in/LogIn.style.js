@@ -164,3 +164,25 @@ export const signUpBlock = css`
     margin-top: 10px;
   `)};
 `;
+
+export const appDownloadCTAContainer = css`
+  div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+`;
+
+export const appDownloadImage = css`
+  margin: 0 4px;
+
+  img {
+    height: 40px;
+  }
+`;
+
