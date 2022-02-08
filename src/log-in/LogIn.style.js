@@ -80,3 +80,9 @@ export const formSubmitInput = css`
     }
   }
 `;
+
+export const logo = css`
+  img {
+    width: 175px;
+  }
+`;
