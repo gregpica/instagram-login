@@ -4,6 +4,7 @@ import { cx } from '@emotion/css';
 import TextInput from '../form/TextInput';
 import PasswordInput from '../form/PasswordInput';
 import SubmitInput from '../form/SubmitInput';
+import InstagramTextLogo from '../assets/InstagramTextLogo';
 
 import * as styles from './LogIn.style';
 
@@ -27,15 +28,16 @@ const LogInForm = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <InstagramTextLogo className={styles.logo} />
+      <form className={styles.form} onSubmit={handleSubmit}>
         <TextInput 
-          className={styles.formInput}
+          className={styles.formTextInput}
           id="login-account-identifer"
           placeholder="Phone number, username, or email"
           onChange={handleAccountIdentifierChange} value={accountIdentifier} 
         />
         <PasswordInput 
-          className={styles.formInput}
+          className={styles.formPasswordInput}
           id="login-password" 
           placeholder="Password" 
           onChange={handlePasswordChange}
