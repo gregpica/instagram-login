@@ -98,6 +98,7 @@ export const formSubmitInput = css`
   &.-submit-allowed {
     input {
       background: #0095F6;
+      cursor: pointer;
     }
   }
 `;
@@ -196,6 +197,7 @@ export const appDownloadCTAContainer = css`
 
 export const appDownloadImage = css`
   margin: 0 4px;
+  cursor: pointer;
 
   img {
     height: 40px;
