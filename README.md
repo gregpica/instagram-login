@@ -8,7 +8,7 @@ Run `yarn`
 
 `yarn start` runs the react app on [http://localhost:3000](http://localhost:3000)
 
-`yarn server-start` runs the server on [http://localhost:3002](http://localhost:3002)
+in separate terminal tab/window, `yarn server-start` runs the server on [http://localhost:3002](http://localhost:3002)
 
 I mimiced the validations that occur on instagram. An incorrect login can be from entering an existing phone number, username, or email, but entering the wrong password OR from entering a non-existent phone number, username, or email - and then at that point the password is irrelevant.
 
