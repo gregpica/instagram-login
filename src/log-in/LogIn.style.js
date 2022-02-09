@@ -1,7 +1,22 @@
 import { css } from '@emotion/css';
 import { tabletAndUp } from '../styles/mediaQueries';
 
+/**
+ * This style file is quite big.
+ * Typically I would have a file per component
+ */
+
 export const container = css`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 50px;
+`;
+
+export const formContainer = css`
   width: 350px;
   height: 382px;
   margin: 0 auto;
@@ -169,7 +184,6 @@ export const appDownloadCTAContainer = css`
   div {
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
   }
 
   p {
@@ -186,3 +200,22 @@ export const appDownloadImage = css`
   }
 `;
 
+export const slideshow = css`
+  width: 240px;
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  left: 151px;
+`;
+
+export const  phoneAndSlideshowContainer = css`
+  position: relative;
+  width: 454px;
+  height: 618px;
+`;
+
+export const phone = css`
+  position: absolute;
+  top: 0;
+  left: 0;
+`;

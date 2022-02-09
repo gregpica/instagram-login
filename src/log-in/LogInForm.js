@@ -29,7 +29,7 @@ const LogInForm = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.formContainer}>
       <InstagramTextLogo className={styles.instagramLogo} />
       <form className={styles.form} onSubmit={handleSubmit}>
         <TextInput 
