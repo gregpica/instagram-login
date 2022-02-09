@@ -8,7 +8,7 @@ export const container = css`
   font-size: 12px;
   line-height: 16px;
   align-items: center;
-  margin: 0 30px;
+  margin: 0 30px 50px 30px;
 `;
 
 export const link = css`

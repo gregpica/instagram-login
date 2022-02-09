@@ -1,9 +1,9 @@
 import { css } from '@emotion/css';
-import { tabletAndUp } from '../styles/mediaQueries';
+import { tabletAndUp, desktopAndUp } from '../styles/mediaQueries';
 
 /**
  * This style file is quite big.
- * Typically I would have a file per component
+ * Typically I would have a file per component or use styled-components
  */
 
 export const container = css`
@@ -12,18 +12,21 @@ export const container = css`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 32px;
   margin-bottom: 50px;
+
+  ${tabletAndUp(css`
+    margin-top: 45px;
+  `)};
 `;
 
 export const formContainer = css`
   width: 350px;
   height: 382px;
   margin: 0 auto;
-  background-color: white;
 
   ${tabletAndUp(css`
     border: 1px solid #dbdbdb;
+    background-color: white;
   `)};
 `;
 
@@ -142,7 +145,6 @@ export const facebookLogin = css`
   margin: 0 auto;
   width: 268px;
   cursor: pointer;
-  background: white;
   justify-content: center;
   font-size: 14px;
   font-weight: bold;
@@ -153,6 +155,10 @@ export const facebookLogin = css`
   span {
     margin-left: 8px;
   }
+
+  ${tabletAndUp(css`
+    background-color: white;
+` )};
 `;
 
 export const forgotPasswordCta = css`
@@ -169,7 +175,6 @@ export const signUpBlock = css`
   justify-content: center;
   font-size: 14px;
   margin: 0 auto;
-  background-color: white;
 
   a {
     color: #0095f6;
@@ -180,6 +185,7 @@ export const signUpBlock = css`
   ${tabletAndUp(css`
     border: 1px solid #dbdbdb;
     margin-top: 10px;
+    background-color: white;
   `)};
 `;
 
@@ -213,9 +219,14 @@ export const slideshow = css`
 `;
 
 export const  phoneAndSlideshowContainer = css`
-  position: relative;
-  width: 454px;
-  height: 618px;
+  display: none;
+
+  ${desktopAndUp(css`
+    display: block;
+    position: relative;
+    width: 454px;
+    height: 618px;
+  `)};
 `;
 
 export const phone = css`
