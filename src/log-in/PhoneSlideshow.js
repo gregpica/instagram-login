@@ -28,9 +28,9 @@ function PhoneSlideshow() {
         pauseOnHover={false}
       >
         {
-          SLIDE_IMAGES.map(url => {
+          SLIDE_IMAGES.map((url, i) => {
             return (
-              <div>
+              <div key={i.toString()}>
                 <img src={url} alt='' />
               </div>
             )
