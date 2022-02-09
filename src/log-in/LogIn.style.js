@@ -21,7 +21,6 @@ export const container = css`
 
 export const formContainer = css`
   width: 350px;
-  height: 382px;
   margin: 0 auto;
 
   ${tabletAndUp(css`
@@ -162,9 +161,14 @@ export const facebookLogin = css`
 `;
 
 export const forgotPasswordCta = css`
-  color: #375185;
-  text-decoration: none;
-  font-size: 12px;
+  a {
+    color: #375185;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  margin-bottom: 20px;
 `;
 
 export const signUpBlock = css`
@@ -233,4 +237,12 @@ export const phone = css`
   position: absolute;
   top: 0;
   left: 0;
+`;
+
+export const failMessage = css`
+  font-size: 14px;
+  color: #ed4956;
+  width: 268px;
+  margin: 20px auto;
+  font-weight: 500;
 `;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import { cx } from '@emotion/css';
 
 import TextInput from '../form/TextInput';
@@ -13,6 +14,9 @@ import * as styles from './LogIn.style';
 const LogInForm = () => {
   const [accountIdentifier, setAccountIdentifier] = useState('');
   const [password, setPassword] = useState('');
+  const [failedLogInMessage, setFailedLogInMessage] = useState('');
+
+  const navigate = useNavigate();
 
   const handleAccountIdentifierChange = e => setAccountIdentifier(e.target.value);
 
@@ -20,9 +24,34 @@ const LogInForm = () => {
 
   const isSubmitAllowed = password.length > 6 && accountIdentifier.length > 6;
 
-  const handleSubmit = () => {
-    if (isSubmitAllowed) {
+  const handleLogInResult = result => {
+    if (result.message) {
+      setFailedLogInMessage(result.message);
+    } else {
+      navigate('/success');
+    }
+  }
 
+  const logInWithCredentials = () => {
+    fetch("/login", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        accountIdentifier,
+        password
+      }),
+    })
+      .then(res => res.json())
+      .then(result => handleLogInResult(result))      
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault();
+  
+    if (isSubmitAllowed) {
+      logInWithCredentials();
     }
 
     return null;
@@ -51,9 +80,17 @@ const LogInForm = () => {
       </form>
       <LogInFormDivider />
       <LogInWithFacebook />
-      <a className={styles.forgotPasswordCta} href='/accounts/password/reset'>
-        Forgot password?
-      </a>
+      {
+        failedLogInMessage && 
+        <p className={styles.failMessage}>
+          {failedLogInMessage}
+        </p>
+      }
+      <div className={styles.forgotPasswordCta}>
+        <a href='/accounts/password/reset'>
+          Forgot password?
+        </a>
+      </div>
     </div>
   );
 }
