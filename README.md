@@ -1,4 +1,4 @@
-# Instagram Web UI
+# Instagram Log In Web UI/UX
 
 `yarn start` runs the react app on [http://localhost:3000](http://localhost:3000)
 
