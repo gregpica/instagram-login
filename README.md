@@ -2,6 +2,8 @@
 
 Create React App and Express server
 
+Run `yarn`
+
 `yarn start` runs the react app on [http://localhost:3000](http://localhost:3000)
 
 `yarn server-start` runs the server on [http://localhost:3002](http://localhost:3002)
@@ -12,6 +14,8 @@ This can be tested in various configurations. To get a successful login with red
 - `josh.maynard@ruggable.com` and `password1`
 - `jon.presley@ruggable.com` and `password2`
 - `gpica@bu.edu` and `password3`
+
+In any case, the phone/username/email and password will be logged in the server console.
 
 ### Features
 - Used react-slideshow-image for the phone fading slideshow UI
