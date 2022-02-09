@@ -1,5 +1,7 @@
 # Instagram Log In Web UI/UX
 
+Create React App and Express server
+
 `yarn start` runs the react app on [http://localhost:3000](http://localhost:3000)
 
 `yarn server-start` runs the server on [http://localhost:3002](http://localhost:3002)
