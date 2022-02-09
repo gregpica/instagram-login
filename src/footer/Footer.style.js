@@ -51,6 +51,7 @@ export const languageSelector = css`
   font-size: 12px;
   line-height: 16px;
   margin-right: 20px;
+  background-color: #fafafa;
 `;
 
 

@@ -20,6 +20,7 @@ export const formContainer = css`
   width: 350px;
   height: 382px;
   margin: 0 auto;
+  background-color: white;
 
   ${tabletAndUp(css`
     border: 1px solid #dbdbdb;
@@ -167,6 +168,7 @@ export const signUpBlock = css`
   justify-content: center;
   font-size: 14px;
   margin: 0 auto;
+  background-color: white;
 
   a {
     color: #0095f6;
