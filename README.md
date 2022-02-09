@@ -22,6 +22,7 @@ This can be tested in various configurations. To get a successful login with red
 ### If I had more time
 - automated tests (component/unit) using jest/enzyme
 - move 'placeholder' to top of input fields when you begin to type
+- finesse styling
 
 ### Screenshots
 ![image](https://user-images.githubusercontent.com/40278754/153137997-ba11c37e-cb43-430b-8e75-5032177d851a.png)
